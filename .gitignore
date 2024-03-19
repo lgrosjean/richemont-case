@@ -165,3 +165,8 @@ cython_debug/
 .terraform.lock.hcl
 *.tfplan
 *.tfstate*
+
+
+# local files
+data/
+.vscode/
