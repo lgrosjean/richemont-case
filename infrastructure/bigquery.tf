@@ -2,7 +2,8 @@ resource "google_bigquery_dataset" "richemont" {
   project                     = var.project_id
   dataset_id                  = "richemont"
   location                    = "EU"
-  default_table_expiration_ms = 3600000
+  default_table_expiration_ms = 3600000 * 24 * 30 # 1 hour * 24 = 1 day * 30 = 1 month
+
 }
 
 resource "google_bigquery_table" "sheet" {
